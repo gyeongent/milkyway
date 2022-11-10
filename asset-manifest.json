@@ -1,11 +1,11 @@
 {
   "files": {
-    "main.css": "/milkyway/static/css/main.1bc1a15c.css",
-    "main.js": "/milkyway/static/js/main.00e54135.js",
+    "main.css": "/milkyway/static/css/main.0e03eb79.css",
+    "main.js": "/milkyway/static/js/main.b16f8431.js",
     "static/media/videoplayback.mp4": "/milkyway/static/media/videoplayback.59516f76faa694db8562.mp4",
+    "static/media/earthmap.svg": "/milkyway/static/media/earthmap.dd024f584b819619c382c607982ee381.svg",
     "static/media/map.png": "/milkyway/static/media/map.3b99fb03afbf58fcf362.png",
     "static/media/do.svg": "/milkyway/static/media/do.d2287a1e1eee0805fc27.svg",
-    "static/media/1.png": "/milkyway/static/media/1.f9f025a48575006e5f79.png",
     "static/media/rs.svg": "/milkyway/static/media/rs.dc155455e86e12200cb5.svg",
     "static/media/bo.svg": "/milkyway/static/media/bo.e0a90fef5f7c6c6ab66f.svg",
     "static/media/mx.svg": "/milkyway/static/media/mx.e18539f71c1156849ae2.svg",
@@ -277,11 +277,11 @@
     "static/media/de.svg": "/milkyway/static/media/de.6435bf24d148ca7248e7.svg",
     "static/media/bd.svg": "/milkyway/static/media/bd.0ad8c443ef4d47ea0497.svg",
     "static/media/id.svg": "/milkyway/static/media/id.f624e2c8444a7794b357.svg",
-    "main.1bc1a15c.css.map": "/milkyway/static/css/main.1bc1a15c.css.map",
-    "main.00e54135.js.map": "/milkyway/static/js/main.00e54135.js.map"
+    "main.0e03eb79.css.map": "/milkyway/static/css/main.0e03eb79.css.map",
+    "main.b16f8431.js.map": "/milkyway/static/js/main.b16f8431.js.map"
   },
   "entrypoints": [
-    "static/css/main.1bc1a15c.css",
-    "static/js/main.00e54135.js"
+    "static/css/main.0e03eb79.css",
+    "static/js/main.b16f8431.js"
   ]
 }
