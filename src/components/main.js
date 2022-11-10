@@ -11,13 +11,14 @@ import appstore_kr from "../media/App_Store_Badge_KR.svg";
 import appstore_en from "../media/App_Store_Badge_US-UK.svg";
 import playstore_kr from "../media/google-play-badge_kr.png";
 import playstore_en from "../media/google-play-badge.png"
+import Earth from "../media/earthmap.svg";
 import Compass from "../compass.svg";
 import MainVideo from "../media/videoplayback.mp4";
 import NoImg from "../media/noimage.png";
 import MapImg from "../media/map.png";
 
 //Guide Import
-import guideOne from "../media/guide/1.png";
+// import guideOne from "../media/guide/1.png";
 
 //Data Import
 import {
@@ -277,7 +278,7 @@ function Main(){
                     <div>
                         <b>{wantLang[0]}</b><br />
                         <div onClick={() => {setLang("en")}}>
-                            <span class="fi fi-un"/>
+                            <img src={Earth} alt="International" style={{width: "25px", backgroundColor: "rgb(50,50,50)"}}/>
                             &nbsp;English
                         </div>
                     </div>

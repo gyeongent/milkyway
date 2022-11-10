@@ -383,3 +383,83 @@ hr {
 .b2t > img {
   width: 100%;
 }
+
+@media only screen and (max-width: 768px) {
+
+  .worldMap {
+    margin: 10vw;
+    margin-top: 15vh;
+  }
+  .worldMap_after {
+    opacity: 1;
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background: none;
+    color: black;
+    left: 0;
+    font-size: 20px;
+    letter-spacing: -0.5px;
+    margin-top: -3vh;
+  }
+
+  .MapDetail_content {
+    margin: 0;
+    height: 100%;
+    padding: 30px;
+  }
+  .ModalAll {
+    margin-bottom: 100px;
+  }
+
+  .downSection {
+    margin: 10vw;
+  }
+  .kindDown {
+    display: block;
+  }
+  .kindDesktop {
+    width: 100%;
+    box-sizing: border-box;
+  }
+  .kindMobile {
+    width: 100%;
+    margin-top: 10px;
+    display: flex;
+  }
+  .kindMobile > div {
+    width: 50%;
+    margin: 0;
+    padding: 5px;
+  }
+
+  .guideLang {
+    text-align: center;
+    font-size: 50px;
+    word-break: keep-all;
+  }
+  .info {
+    width: 100%;
+    box-sizing: border-box;
+    justify-content: center;
+  }
+  .guideSection {
+    margin: 10vw;
+    margin-bottom: 20vh;
+  }
+  .guideDesc {
+    margin-top: 10vh;
+  }
+  .guideDetail {
+    display: block;
+  }
+  .guideDetail_window {
+    margin: 0;
+    width: 100%;
+  }
+  .guideDetail_content {
+    margin-top: 20px;
+    padding: 10px;
+  }
+}
