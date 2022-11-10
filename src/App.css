@@ -1,38 +1,385 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+::selection {
+  background-color: black;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+html {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+video {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  filter:opacity(60%);
+}
+
+a {
+  text-decoration: none;
+}
+
+hr {
+  margin: 150px 0;
+  height: 3px;
+  border: none;
+  background-color: rgb(245,245,245);
+  border-radius: 20px;
+}
+
+.guide_hr {
+  margin: 50px 0;
+  height: 3px;
+  background-color: rgb(245,245,245);
+
+}
+
+.small_hr {
+  background-color: rgb(226, 226, 226);
+  border: none;
+  height: 1px;
+  margin: 20px 0;
+}
+
+.MuiSvgIcon-root {
+  margin-right: 5px;
+}
+
+.App {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+.footer {
+  width: 100%;
+  height: 70px;
+  background-color: black;
+  text-align: center;
+  color: white;
+  line-height: 70px;
+}
+
+.main_screen_info {
+  position:absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.main_video {
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+  overflow-y: hidden;
+  background-image: radial-gradient(
+    rgb(44, 3, 156) 6px,
+    transparent 6px
+  );
+  background-size: 10px 10px;
+  background-repeat: repeat;
+}
+
+.main_video_title {
+  font-size: 50px;
+  font-weight: 700;
+  letter-spacing: -2px;
+  color: white;
+}
+
+.interaction_btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: normal;
+  margin-top: 10px;
+}
+
+.interaction_btn > a > div {
+  margin: 0 8px;
+  border-radius: 50px;
+  background-color: black;
+  color: white;
+  padding: 8px 20px;
+  display: flex;
+  align-items: center;
+  width: max-content;
+  cursor: pointer;
+}
+
+.lang_select > div > div {
+  cursor: pointer;
+  width: max-content;
+  margin-top: 10px;
+
+}
+
+.lang_select {
+  padding: 30px 80px;
+  background-color: black;
+  color: white;
+}
+
+.kindDown {
+  display: flex;
+}
+
+.kindDesktop {
+  border-radius: 10px;
+  width: 70%;
+  padding: 20px;
+  border: 1px solid lightgray;
+  margin-top: 10px;
+  background-color: rgb(250,250,250);
+}
+
+.info {
+  display: flex;
+  align-items: center;
+  font-weight: 400;
+  background-color: black;
+  color: white;
+  padding: 5px 10px;
+  width: max-content;
+  border-radius: 10px;
+  font-size: 13px;
+  margin-top: 10px;
+  letter-spacing: -1px;
+}
+
+.downInfo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.downInfo > div {
+  display: flex;
+  align-items: center;
+}
+
+.downBtn {
+  border-radius: 10px;
+  background-color: black;
+  color: white;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.kindMobile {
+  width: 20%;
+  
+}
+
+.kindMobile > div {
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  padding: 20px;
+  margin-left: 20px;
+}
+
+.kindMobile > div > img {
+  margin: auto;
+  display: block;
+  object-fit: cover;
+  width: 100%;
+}
+
+.downSection {
+  margin: 150px 80px;
+}
+
+.guideSection {
+  margin: 80px 80px 150px 80px;
+}
+
+.guideLang {
+  font-weight: 700;
+  font-size: 35px;
+  letter-spacing: -2px;
+}
+
+.guideDetail {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.guideDetail_window {
+  width: 30vw;
+  border-radius: 20px;
+  overflow: hidden;
+  cursor: zoom-in;
+  margin-right: 100px;
+}
+
+.guideDetail_content {
+  width: 70vw;
+  height: max-content;
+}
+
+.window_control > div {
+  display: flex;
+  margin: 7px 0 0 15px;
+}
+
+.circle {
+  width: 15px;
+  height: 15px;
+  border-radius: 50px;
+  margin-right: 5px;
+}
+
+.red {
+  background-color: red;
+}
+
+.orange {
+  background-color: orange;
+}
+
+.green {
+  background-color: greenyellow;
+}
+
+.guideDetail_window > img {
+  width: 100%;
+  display: block;
+}
+
+.worldMap {
+  margin: 150px;
+  overflow: hidden;
+  box-sizing: border-box;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+.worldMap > img {
+  width: 100%;
+  overflow: hidden;
+  display: block;
+  transition: 0.5s all ease;
+}
+
+.worldMap:hover > img {
+  transform: scale(1.2);
+  transition: 0.5s all ease;
+}
+
+.worldMap_after {
+  opacity: 0;
+  position: relative;
+  transition: 0.5s all ease;
+  margin-top: -200px;
+  padding: 50px;
+  line-height: 100px;
+  height: 100px;
+  font-weight: 700;
+  font-size: 35px;
+  letter-spacing: -2px;
+  background: linear-gradient(rgba(255,255,255, 0), rgba(0,0,0, 0.5));
+  color: white;
+  width: 100%;
+}
+
+.worldMap:hover > .worldMap_after {
+  opacity: 1;
+  transition: 0.5s all ease;
+}
+
+.MapDetail {
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  z-index: 5;
+  top: 0;
+  left: 0;
+  display: none;
+}
+
+.MapDetail_content {
+  background-color: white;
+  height: 80vh;
+  margin: 80px 150px;
+  overflow: hidden;
+  overflow-y: scroll;
+  padding: 0 80px;
+}
+
+.MapDetail_Text {
+  margin-top: 50px;
+}
+
+.MapDetail_ImgSection {
+  overflow: hidden;
+  border-radius: 20px;
+  box-sizing: border-box;
+}
+
+.MapDetail_ImgSection > img {
+  width: 100%;
+  display: block;
+}
+
+.MapDetail_Title {
+  font-weight: 700;
+  margin-top: 25px;
+  font-size: 25px;
+  letter-spacing: -1px;
+}
+
+.MapDetail_Desc {
+  font-weight: 300;
+  margin-top: 10px;
+  font-size: 17px;
+  letter-spacing: -1px;
+}
+
+.closeBtn {
+  cursor: pointer;
+  width: max-content;
+  margin-top: 50px;
+}
+
+.openModal {
+  overflow: hidden;
+}
+
+.ModalAll {
+  margin-bottom: 200px;
+}
+
+.b2t {
+  width: 70px;
+  height: 70px;
+  overflow: hidden;
+  border: 1px solid lightgray;
+  border-radius: 100px;
+  padding: 10px;
+  background-color: rgb(250,250,250);
+  transform: rotate(180deg);
+  cursor: pointer;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  margin: 50px;
+  opacity: 0;
+  transition: all ease 0.2s;
+}
+
+.b2t > img {
+  transition: all ease 0.3s;
+}
+
+.b2t:hover > img {
+  transform: rotate(180deg);
+  transition: all ease 0.3s;
+}
+
+.b2t > img {
+  width: 100%;
 }
