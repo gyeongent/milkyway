@@ -371,6 +371,21 @@ hr {
   transition: all ease 0.2s;
 }
 
+.mobile_b2t {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding: 25px;
+  background-color: rgb(240,240,240);
+  color: black;
+  fill: white;
+  display: none;
+}
+
+.mobile_b2t > div {
+  margin-left: 5px;
+}
+
 .b2t > img {
   transition: all ease 0.3s;
 }
@@ -401,6 +416,10 @@ hr {
 }
 
 @media only screen and (max-width: 768px) {
+
+  .lang_select {
+    padding: 20px 10vw;
+  }
 
   .worldMap {
     margin: 10vw;
@@ -492,5 +511,9 @@ hr {
   .guideDetail_content {
     margin-top: 20px;
     padding: 10px;
+  }
+
+  .mobile_b2t {
+    display: flex;
   }
 }
