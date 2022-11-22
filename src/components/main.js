@@ -5,6 +5,7 @@ import LibraryBooksIcon from '@mui/icons-material/LibraryBooks';
 import DownloadIcon from '@mui/icons-material/Download';
 import InfoIcon from '@mui/icons-material/Info';
 import CloseIcon from '@mui/icons-material/Close';
+import WindowsIcon from "../media/windowslogo.svg";
 
 //Media Import (Images & Videos)
 import appstore_kr from "../media/App_Store_Badge_KR.svg";
@@ -180,7 +181,7 @@ function DownInfoCompo(props){
                     {props.googleDrive}
                 </div>
                 <div />
-                <div>
+                <div className="down_version">
                     v. {props.version}
                 </div>
                 <div className="downBtn" onClick={()=>{alert("In ready.\n준비중입니다.")}}>
@@ -208,7 +209,11 @@ function DownloadSection(props){
             </div>
             <div className="kindDown">
                 <div className="kindDesktop">
-                <DownInfoCompo 
+                    <div className="platforms">
+                        <img src={WindowsIcon} alt="Windows Logo" width={25}/>
+                        <div>Windows</div>
+                    </div>
+                    <DownInfoCompo
                         googleDrive={"CDN Download Link"}
                         version={"DEV"}
                         download={props.download}

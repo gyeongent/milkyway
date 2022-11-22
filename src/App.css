@@ -384,6 +384,22 @@ hr {
   width: 100%;
 }
 
+.platforms {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.platforms > div {
+  margin-left: 5px;
+  font-weight: 300;
+  font-size: 20px;
+}
+
+.down_version {
+  display: block;
+}
+
 @media only screen and (max-width: 768px) {
 
   .worldMap {
@@ -423,6 +439,14 @@ hr {
     width: 100%;
     box-sizing: border-box;
   }
+  .platforms {
+    justify-content: center;
+    margin-top: 25px;
+    margin-bottom: 50px;
+  }
+  .down_version {
+    visibility: hidden;
+  }
   .kindMobile {
     width: 100%;
     margin-top: 10px;
@@ -432,6 +456,13 @@ hr {
     width: 50%;
     margin: 0;
     padding: 5px;
+  }
+  .downInfo {
+    word-break: keep-all;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 0.8rem;
   }
 
   .guideLang {
